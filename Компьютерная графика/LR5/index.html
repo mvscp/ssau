@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лабораторная работа №5</title>
+        <script defer src="script.js"></script>
+        <style>
+            .flex {
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root">
+            <div class="flex">
+                <div>
+                    <div class="flex">X<input type="range" id="dx"/></div>
+                    <div class="flex">Y<input type="range" id="dy"/></div>
+                    <div class="flex">Z<input type="range" id="dz"/></div>
+                    <div class="flex">α<input type="range" id="alpha"/></div>
+                    <div class="flex">β<input type="range" id="beta"/></div>
+                    <div class="flex">ɣ<input type="range" id="gamma"/></div>
+                    <div class="flex">k<input type="range" id="scale"/></div>
+                    <hr/>
+                    <div class="flex">R<input type="range" id="R"/></div>
+                </div>
+                <canvas id="canvasik" width="900px"  height="900px"></canvas>
+            </div>
+        </div>
+    </body>
+</html>
