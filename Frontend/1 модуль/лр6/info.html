@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторная работа 6</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="menu">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+                </svg>
+            </button>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="info.html">Информация</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="films.html">Фильмы</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false" data-bs-scroll="true">
+        <div class="offcanvas-header">
+            <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas">Меню</h6>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                <li class="nav-item">
+                    <a href="#demo" class="nav-link text-truncate">
+                        <span class="ms-1 d-none d-sm-inline">Карусель</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#films" class="nav-link text-truncate">
+                        <span class="ms-1 d-none d-sm-inline">Фильмы</span> </a>
+                </li>
+                <li>
+                    <a href="#info" class="nav-link text-truncate">
+                        <span class="ms-1 d-none d-sm-inline">Информация</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div id="films" class="container-fluid" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col mt-auto">
+                <div class="card" style="width: 600px;">
+                    <img class="card-img-top" src="4.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Крестный отец</h4>
+                        <p class="card-text">Глава семьи, Дон Вито Корлеоне, выдаёт замуж свою дочь. В это время со Второй мировой войны возвращается его любимый сын Майкл. Майкл, герой войны, гордость семьи, не выражает желания заняться жестоким семейным бизнесом. Дон Корлеоне ведёт дела по старым правилам, но наступают иные времена, и появляются люди, желающие изменить сложившиеся порядки. На Дона Корлеоне совершается покушение.</p>
+                        <a href="https://www.kinopoisk.ru/film/325/" class="btn btn-dark">Страница на кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-auto">
+                <div class="card" style="width: 600px;">
+                    <img class="card-img-top" src="5.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Лицо со шрамом</h4>
+                        <p class="card-text">Весной 1980 года был открыт порт Мэйриэл Харбор, и тысячи кубинских беженцев ринулись в Соединенные Штаты на поиски Американской Мечты. Один из них нашел ее на залитых солнцем улицах Майами. Богатство, власть и страсть превзошли даже самые невероятные его мечты. Его звали Тони Монтана. Мир запомнил его под другим именем — Лицо со шрамом.</p>
+                        <a href="https://www.kinopoisk.ru/film/4695/" class="btn btn-dark">Страница на кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-auto">
+                <div class="card" style="width: 600px;">
+                    <img class="card-img-top" src="6.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Адвокат дьявола</h4>
+                        <p class="card-text">В Нью-Йорк по приглашению главы крупного юридического концерна прибывает Кевин Ломакс, молодой адвокат. До этого он был известен тем, что защищал исключительно негодяев и притом не проиграл ни одного процесса. На новом месте работы он вполне счастлив, он живет в роскошной квартире с любящей женой, его окружают интересные люди.</p>
+                        <a href="https://www.kinopoisk.ru/film/3797/" class="btn btn-dark">Страница на кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='info' class="container" id="id1" style="margin-top: 30px;">
+        <div class="card">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapse">
+                    Информация
+                </a>
+            </div>
+            <div id="collapse" class="collapse show" data-bs-parent="#id1">
+                <div class="card-body">
+                    <p>
+                        Альфре́до Джеймс (Аль) Пачи́но (англ. Alfredo James (Al) Pacino; род. 25 апреля 1940, Восточный Гарлем, Манхэттен, Нью-Йорк) — американский актёр, режиссёр и сценарист.
+
+                        Наиболее знаменит своими ролями гангстеров — Майкл Корлеоне в трилогии «Крёстный отец» Фрэнсиса Форда Копполы и Тони Монтана в фильме Брайана Де Пальма «Лицо со шрамом» (1983). Роль Фрэнка Слейда в фильме «Запах женщины» (1992) принесла актёру «Оскар» в номинации Лучшая мужская роль, что стало его первым успехом после семи предыдущих номинаций.
+
+                        Аль Пачино дебютировал в кино в 1969 году в фильме «Я, Натали», сыграв в нём незначительную второстепенную роль. В 1971 году он снялся во втором фильме, но теперь уже сыграл главную роль в драме «Паника в Нидл-Парке». В этом фильме актёра заметил Коппола и пригласил в «Крёстный отец» на роль Майкла Корлеоне.
+
+                        Помимо удачной карьеры в кино, Аль Пачино является знаковым театральным актёром. В 1969 и 1977 годах он был награждён престижной театральной премией «Тони». Кроме того, он является обладателем множества других наград, в том числе и от Американского института киноискусства. Аль Пачино вместе с Эллен Бёрстин возглавляет Актёрскую студию в Нью-Йорке.
+                    </p>
+                    <p>Аль Пачино родился 25 апреля 1940 года в Восточном Гарлеме на Манхэттене в Нью-Йорке, в семье италоамериканцев Розы и Сальваторе Пачино, которые развелись, когда ему было два года. Тогда они с матерью переехали в Южный Бронкс, в район зоопарка, чтобы жить вместе с её родителями Кейт и Джеймсом Джерарди, которые были выходцами из Корлеоне, Сицилия. Его отец переехал в калифорнийский город Ковина, где работал страховщиком и ресторатором.
+
+                        Аль Пачино поступил в знаменитую Школу исполнительских искусств в Нью-Йорке. Будучи подростком, «Сони», как называли его друзья, хотел стать профессиональным бейсболистом. Но в то же время у него появилось другое популярное среди его товарищей прозвище — «Актёр».
+                        
+                        В девять лет он начал курить, а в тринадцать стал употреблять спиртные напитки и баловаться марихуаной, но никогда не принимал тяжёлых наркотиков, так как два его близких друга умерли от передозировки. Аль Пачино рос в бедном криминальном районе и часто сам был зачинщиком драк, являясь одним из главных возмутителей школьного спокойствия.
+                        
+                        Учёба была малоинтересна для Альфредо, и он завалил почти все экзамены, кроме английского. В 17 лет его отчислили из школы. Мать была недовольна таким поворотом событий, они поссорились, и Альфредо ушёл из дома. Он работал на низкооплачиваемых работах, в том числе был посыльным, официантом, уборщиком, почтальоном, и всё это только для того, чтобы заработать на продолжение своего актёрского образования.
+                        
+                        Начал выступать в Нью-Йоркском театральном андерграунде, а после присоединился к студии Херберта Бергхофа «HB Studio», которая располагалась в Гринвич-Виллидже — богемном районе Нью-Йорка той эпохи. В этой студии он познакомился с преподавателем актёрского мастерства Чарли Лаутоном, который стал его учителем и лучшим другом. В этот период у Аль Пачино часто не было ни работы, ни крыши над головой, иногда ему приходилось ночевать на улице, в театрах или оставаться у друзей. В 1962 году, в возрасте 43 лет, от лейкемии скончалась его мать, а через год умер его дед Джеймс Джерарди — один из самых важных и почитаемых людей в жизни Аль Пачино.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

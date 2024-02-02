@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 5</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="table.css"/>
+</head>
+<body>
+    <div class="header">
+        <a href="main.html">Основная страница</a>
+        <a href="page2.html">Позиционирование элементов</a>
+        <a href="table.html">Таблица</a>
+    </div>
+    <table>
+        <caption>Таблица студентов</caption>
+        <tr>
+            <th>id</th>
+            <th style="width: 230px;">ФИО студента</th>
+            <th style="width: 200px;">Номер зачетной книжки</th>
+            <th>Номер группы</th>
+            <th>Пол</th>
+            <th>Возраст</th>
+            <th>Форма обучения</th>
+            <th>Направление</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Тазиков Вячеслав Владимирович</td>
+            <td>2380476</td>
+            <td>6301</td>
+            <td>Мужской</td>
+            <td>20</td>
+            <td>Очная</td>
+            <td>020302</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Алешина Екатерина Андреевна</td>
+            <td>2384065</td>
+            <td>6302</td>
+            <td>Женский</td>
+            <td>20</td>
+            <td>Очная</td>
+            <td>020302</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Горбунова Виолетта Михайловна</td>
+            <td>1249576</td>
+            <td>6301</td>
+            <td>Женский</td>
+            <td>20</td>
+            <td>Очная</td>
+            <td>020302</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Волошин Сергей Викторович</td>
+            <td>2340897</td>
+            <td>6303</td>
+            <td>Мужской</td>
+            <td>20</td>
+            <td>Очная</td>
+            <td>020302</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Авдеев Матвей Егорович</td>
+            <td>3028456</td>
+            <td>6301</td>
+            <td>Мужской</td>
+            <td>20</td>
+            <td>Очная</td>
+            <td>020302</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Беленцов Александр Олегович</td>
+            <td>8234756</td>
+            <td>6302</td>
+            <td>Мужской</td>
+            <td>20</td>
+            <td>Очная</td>
+            <td>020302</td>
+        </tr>
+    </table>
+    <form style="margin: 50px 700px 0px 700px;">
+        <fieldset>
+            <legend>Добавление данных</legend>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" style="margin-left: 150px;" required="true"><br>
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" name="name" style="margin-left: 131px;" required="true"><br>
+            <label for="numbers">Номер зачетной книжки:</label>
+            <input type="text" id="numbers" name="numbers" style="margin-left: 2px;" required="true"><br>
+            <label for="group">Номер группы:</label>
+            <input type="text" id="group" name="group" style="margin-left: 68px;" required="true"><br>
+            <label for="sex">Пол:</label>
+            <input type="text" id="sex" name="sex" style="margin-left: 139px;" required="true"><br>
+            <label for="age">Возраст:</label>
+            <input type="text" id="age" name="age" style="margin-left: 112px;" required="true"><br>
+            <label for="study">Форма обучения:</label>
+            <select id="study" name="study">
+                <option value="dasd">dasd</option>
+                <option value="sfgds" selected>sdsfd</option>
+            </select><br>
+            <label for="class">Направление:</label>
+            <input type="text" id="class" name="class" style="margin-left: 78px;" required="true"><br>
+            <input type="submit" value="Добавить" style="margin-left: 223px; margin-top: 10px;">
+        </fieldset>
+    </form>
+</body>
