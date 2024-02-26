@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Soul Knight</string>
+    <string name="start">Начать</string>
+    <string name="company">Играть</string>
+    <string name="settings">Настройки</string>
+    <string name="exit">Выход</string>
+    <string name="back">Назад</string>
+</resources>
