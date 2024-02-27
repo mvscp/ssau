@@ -6,20 +6,21 @@ INSERT INTO mountain (name, height, country, region) VALUES
 ('Annapurna I', 8091, 'Nepal', 'Himalaya'),
 ('K5', 8080, 'Pakistan', 'Karakoram');
 
-INSERT INTO ascent (ascent_start, ascent_end, mountain_id) VALUES
-('1953-03-05', '1953-06-01', 1),
-('2021-01-4', '2021-01-16', 2),
-('1950-05-13', '1950-06-17', 5),
-('1996-03-30', '1996-05-12', 1),
-('1989-04-02', '1989-05-20', 3);
+INSERT INTO ascent (ascent_start, ascent_end, mountain_id, group_id) VALUES
+('1953-03-05', '1953-06-01', 1, 1),
+('2021-01-4', '2021-01-16', 2, 2),
+('1950-05-13', '1950-06-17', 5, 3),
+('1996-03-30', '1996-05-12', 1, 4),
+('1996-03-30', '1996-05-12', 1, 5),
+('1989-04-02', '1989-05-20', 3, 6);
 
-INSERT INTO `group` (name, ascent_id) VALUES
-('Everest Expedition', 1),
-('K2 Winter Ascent', 2),
-('Annapurna First Ascent', 3),
-('Mountain Madness', 4),
-('Adventure Consultants', 4),
-('Kangchenjunga Expedition', 5);
+INSERT INTO `group` (name) VALUES
+('Everest Expedition'),
+('K2 Winter Ascent'),
+('Annapurna First Ascent'),
+('Mountain Madness'),
+('Adventure Consultants'),
+('Kangchenjunga Expedition');
 
 INSERT INTO climber (name, address) VALUES
 ('Edmund Hillary', 'Auckland, New Zealand'),
@@ -35,6 +36,9 @@ INSERT INTO climber (name, address) VALUES
 ('Scott Fischer', 'Muskegon, Michigan, United States'),
 ('Rob Hall', 'Christchurch, New Zealand'),
 ('Andy Harris', 'Salisbury, Wiltshire, England');
+
+INSERT INTO role (name) VALUES
+('Guide');
 
 INSERT INTO climber_group VALUES
 (1, 1), (2, 1), (3, 2), (4, 2), (5, 2), (6, 2), (7, 2),
