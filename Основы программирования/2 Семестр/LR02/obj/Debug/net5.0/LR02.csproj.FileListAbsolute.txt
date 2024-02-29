@@ -1,0 +1,16 @@
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\obj\Debug\net5.0\LR02.csproj.AssemblyReference.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\obj\Debug\net5.0\LR02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\obj\Debug\net5.0\LR02.AssemblyInfoInputs.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\obj\Debug\net5.0\LR02.AssemblyInfo.cs
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\obj\Debug\net5.0\LR02.csproj.CoreCompileInputs.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\bin\Debug\net5.0\LR02.exe
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\bin\Debug\net5.0\LR02.deps.json
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\bin\Debug\net5.0\LR02.runtimeconfig.json
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\bin\Debug\net5.0\LR02.runtimeconfig.dev.json
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\bin\Debug\net5.0\LR02.dll
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\bin\Debug\net5.0\ref\LR02.dll
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\bin\Debug\net5.0\LR02.pdb
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\obj\Debug\net5.0\LR02.dll
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\obj\Debug\net5.0\ref\LR02.dll
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\obj\Debug\net5.0\LR02.pdb
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR02\obj\Debug\net5.0\LR02.genruntimeconfig.cache

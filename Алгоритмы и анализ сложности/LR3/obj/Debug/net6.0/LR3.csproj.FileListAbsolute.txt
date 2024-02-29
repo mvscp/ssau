@@ -1,0 +1,15 @@
+C:\Users\roma2\Desktop\programs\C#\LR3\bin\Debug\net6.0\LR3.exe
+C:\Users\roma2\Desktop\programs\C#\LR3\bin\Debug\net6.0\LR3.deps.json
+C:\Users\roma2\Desktop\programs\C#\LR3\bin\Debug\net6.0\LR3.runtimeconfig.json
+C:\Users\roma2\Desktop\programs\C#\LR3\bin\Debug\net6.0\LR3.dll
+C:\Users\roma2\Desktop\programs\C#\LR3\bin\Debug\net6.0\LR3.pdb
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\LR3.csproj.AssemblyReference.cache
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\LR3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\LR3.AssemblyInfoInputs.cache
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\LR3.AssemblyInfo.cs
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\LR3.csproj.CoreCompileInputs.cache
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\LR3.dll
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\refint\LR3.dll
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\LR3.pdb
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\LR3.genruntimeconfig.cache
+C:\Users\roma2\Desktop\programs\C#\LR3\obj\Debug\net6.0\ref\LR3.dll

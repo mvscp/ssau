@@ -1,0 +1,11 @@
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\bin\Debug\LR08.exe.config
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\bin\Debug\LR08.exe
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\bin\Debug\LR08.pdb
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\obj\Debug\LR08.csproj.AssemblyReference.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\obj\Debug\LR08.csproj.SuggestedBindingRedirects.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\obj\Debug\LR08.Form1.resources
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\obj\Debug\LR08.Properties.Resources.resources
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\obj\Debug\LR08.csproj.GenerateResource.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\obj\Debug\LR08.csproj.CoreCompileInputs.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\obj\Debug\LR08.exe
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08\obj\Debug\LR08.pdb

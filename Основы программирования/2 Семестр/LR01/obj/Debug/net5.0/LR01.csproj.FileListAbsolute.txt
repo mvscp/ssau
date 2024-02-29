@@ -1,0 +1,16 @@
+C:\Users\roma2\Desktop\Проги\C#\LR01\bin\Debug\net5.0\LR01.exe
+C:\Users\roma2\Desktop\Проги\C#\LR01\bin\Debug\net5.0\LR01.deps.json
+C:\Users\roma2\Desktop\Проги\C#\LR01\bin\Debug\net5.0\LR01.runtimeconfig.json
+C:\Users\roma2\Desktop\Проги\C#\LR01\bin\Debug\net5.0\LR01.runtimeconfig.dev.json
+C:\Users\roma2\Desktop\Проги\C#\LR01\bin\Debug\net5.0\LR01.dll
+C:\Users\roma2\Desktop\Проги\C#\LR01\bin\Debug\net5.0\ref\LR01.dll
+C:\Users\roma2\Desktop\Проги\C#\LR01\bin\Debug\net5.0\LR01.pdb
+C:\Users\roma2\Desktop\Проги\C#\LR01\obj\Debug\net5.0\LR01.csproj.AssemblyReference.cache
+C:\Users\roma2\Desktop\Проги\C#\LR01\obj\Debug\net5.0\LR01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roma2\Desktop\Проги\C#\LR01\obj\Debug\net5.0\LR01.AssemblyInfoInputs.cache
+C:\Users\roma2\Desktop\Проги\C#\LR01\obj\Debug\net5.0\LR01.AssemblyInfo.cs
+C:\Users\roma2\Desktop\Проги\C#\LR01\obj\Debug\net5.0\LR01.csproj.CoreCompileInputs.cache
+C:\Users\roma2\Desktop\Проги\C#\LR01\obj\Debug\net5.0\LR01.dll
+C:\Users\roma2\Desktop\Проги\C#\LR01\obj\Debug\net5.0\ref\LR01.dll
+C:\Users\roma2\Desktop\Проги\C#\LR01\obj\Debug\net5.0\LR01.pdb
+C:\Users\roma2\Desktop\Проги\C#\LR01\obj\Debug\net5.0\LR01.genruntimeconfig.cache

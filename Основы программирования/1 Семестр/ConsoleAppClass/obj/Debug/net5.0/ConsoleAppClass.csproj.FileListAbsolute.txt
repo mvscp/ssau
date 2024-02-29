@@ -1,0 +1,16 @@
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\obj\Debug\net5.0\ConsoleAppClass.csproj.AssemblyReference.cache
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\obj\Debug\net5.0\ConsoleAppClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\obj\Debug\net5.0\ConsoleAppClass.AssemblyInfoInputs.cache
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\obj\Debug\net5.0\ConsoleAppClass.AssemblyInfo.cs
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\obj\Debug\net5.0\ConsoleAppClass.csproj.CoreCompileInputs.cache
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\bin\Debug\net5.0\ConsoleAppClass.exe
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\bin\Debug\net5.0\ConsoleAppClass.deps.json
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\bin\Debug\net5.0\ConsoleAppClass.runtimeconfig.json
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\bin\Debug\net5.0\ConsoleAppClass.runtimeconfig.dev.json
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\bin\Debug\net5.0\ConsoleAppClass.dll
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\bin\Debug\net5.0\ref\ConsoleAppClass.dll
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\bin\Debug\net5.0\ConsoleAppClass.pdb
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\obj\Debug\net5.0\ConsoleAppClass.dll
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\obj\Debug\net5.0\ref\ConsoleAppClass.dll
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\obj\Debug\net5.0\ConsoleAppClass.pdb
+C:\Users\roma2\Desktop\Проги\ConsoleAppClass\obj\Debug\net5.0\ConsoleAppClass.genruntimeconfig.cache

@@ -1,0 +1,9 @@
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08_1\bin\Debug\LR08_1.exe
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08_1\bin\Debug\LR08_1.pdb
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08_1\obj\Debug\LR08_1.csproj.AssemblyReference.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08_1\obj\Debug\LR08_1.Form1.resources
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08_1\obj\Debug\LR08_1.Properties.Resources.resources
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08_1\obj\Debug\LR08_1.csproj.GenerateResource.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08_1\obj\Debug\LR08_1.csproj.CoreCompileInputs.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08_1\obj\Debug\LR08_1.exe
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR08_1\obj\Debug\LR08_1.pdb

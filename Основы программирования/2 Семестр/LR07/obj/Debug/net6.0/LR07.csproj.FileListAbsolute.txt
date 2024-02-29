@@ -1,0 +1,15 @@
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\bin\Debug\net6.0\LR07.exe
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\bin\Debug\net6.0\LR07.deps.json
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\bin\Debug\net6.0\LR07.runtimeconfig.json
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\bin\Debug\net6.0\LR07.dll
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\bin\Debug\net6.0\LR07.pdb
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\LR07.csproj.AssemblyReference.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\LR07.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\LR07.AssemblyInfoInputs.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\LR07.AssemblyInfo.cs
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\LR07.csproj.CoreCompileInputs.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\LR07.dll
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\refint\LR07.dll
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\LR07.pdb
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\LR07.genruntimeconfig.cache
+C:\Users\roma2\Desktop\Проги\C#\2 сем\LR07\obj\Debug\net6.0\ref\LR07.dll

@@ -1,0 +1,15 @@
+C:\Users\roma2\Desktop\programs\C#\LR4\bin\Debug\net6.0\LR4.exe
+C:\Users\roma2\Desktop\programs\C#\LR4\bin\Debug\net6.0\LR4.deps.json
+C:\Users\roma2\Desktop\programs\C#\LR4\bin\Debug\net6.0\LR4.runtimeconfig.json
+C:\Users\roma2\Desktop\programs\C#\LR4\bin\Debug\net6.0\LR4.dll
+C:\Users\roma2\Desktop\programs\C#\LR4\bin\Debug\net6.0\LR4.pdb
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\LR4.csproj.AssemblyReference.cache
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\LR4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\LR4.AssemblyInfoInputs.cache
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\LR4.AssemblyInfo.cs
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\LR4.csproj.CoreCompileInputs.cache
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\LR4.dll
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\refint\LR4.dll
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\LR4.pdb
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\LR4.genruntimeconfig.cache
+C:\Users\roma2\Desktop\programs\C#\LR4\obj\Debug\net6.0\ref\LR4.dll

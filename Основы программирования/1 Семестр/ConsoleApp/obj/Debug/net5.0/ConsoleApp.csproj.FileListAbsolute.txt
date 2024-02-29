@@ -1,0 +1,16 @@
+C:\Users\roma2\Desktop\Проги\ConsoleApp\bin\Debug\net5.0\ConsoleApp.exe
+C:\Users\roma2\Desktop\Проги\ConsoleApp\bin\Debug\net5.0\ConsoleApp.deps.json
+C:\Users\roma2\Desktop\Проги\ConsoleApp\bin\Debug\net5.0\ConsoleApp.runtimeconfig.json
+C:\Users\roma2\Desktop\Проги\ConsoleApp\bin\Debug\net5.0\ConsoleApp.runtimeconfig.dev.json
+C:\Users\roma2\Desktop\Проги\ConsoleApp\bin\Debug\net5.0\ConsoleApp.dll
+C:\Users\roma2\Desktop\Проги\ConsoleApp\bin\Debug\net5.0\ref\ConsoleApp.dll
+C:\Users\roma2\Desktop\Проги\ConsoleApp\bin\Debug\net5.0\ConsoleApp.pdb
+C:\Users\roma2\Desktop\Проги\ConsoleApp\obj\Debug\net5.0\ConsoleApp.csproj.AssemblyReference.cache
+C:\Users\roma2\Desktop\Проги\ConsoleApp\obj\Debug\net5.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roma2\Desktop\Проги\ConsoleApp\obj\Debug\net5.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\roma2\Desktop\Проги\ConsoleApp\obj\Debug\net5.0\ConsoleApp.AssemblyInfo.cs
+C:\Users\roma2\Desktop\Проги\ConsoleApp\obj\Debug\net5.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\roma2\Desktop\Проги\ConsoleApp\obj\Debug\net5.0\ConsoleApp.dll
+C:\Users\roma2\Desktop\Проги\ConsoleApp\obj\Debug\net5.0\ref\ConsoleApp.dll
+C:\Users\roma2\Desktop\Проги\ConsoleApp\obj\Debug\net5.0\ConsoleApp.pdb
+C:\Users\roma2\Desktop\Проги\ConsoleApp\obj\Debug\net5.0\ConsoleApp.genruntimeconfig.cache
