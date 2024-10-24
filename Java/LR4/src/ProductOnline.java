@@ -1,8 +1,11 @@
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-class ProductOnline implements Product {
+class ProductOnline implements Product, Serializable {
+    private static final long serialVersionUID = 1L;
+
     private String name;
     private int price;
     private List<Integer> reviews;
@@ -68,6 +71,31 @@ class ProductOnline implements Product {
             throw new NoReviewsException("No reviews available for this product");
         }
         return reviews.stream().mapToInt(Integer::intValue).average().orElse(0);
+    }
+
+    @Override
+    public void output(OutputStream out) {
+        try {
+            DataOutputStream dos = new DataOutputStream(out);
+            dos.writeUTF(name);
+            dos.writeInt(price);
+            dos.writeUTF(url);
+            dos.writeInt(reviews.size());
+            for (int review : reviews) {
+                dos.writeInt(review);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void write(Writer out) {
+        try {
+            out.write( name + " " + price + " " + url + " " + reviews.size() + " " + reviews + "\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
