@@ -124,4 +124,8 @@ public class ProductIO {
 
         return product;
     }
+
+    public static Product getThreadSafeDevice(Product product) {
+        return new ThreadSafeProduct(product);
+    }
 }
