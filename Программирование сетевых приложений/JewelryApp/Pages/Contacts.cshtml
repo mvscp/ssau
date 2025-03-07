@@ -1,0 +1,54 @@
+@page
+@model JewelryApp.Pages.ContactsModel
+
+@{
+    ViewData["Title"] = "Контакты | Alchemy";
+}
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="~/css/contacts.css">
+    <script src="~/js/utils.js" type="module"></script>
+</head>
+
+<main>
+    <h1>Свяжитесь с нами</h1>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Alchemy Licensing</h2>
+            <p>Alchemy Carta<br>Санкт-Петербург<br>Лиговский проспект, д. 47 лит А, пом. 8Н<br>Почтовый адрес 191040</p>
+            <p>По всем вопросам обращайтесь:</p>
+            <p>Email: <a href="mailto:licensing@alchemygroup.com">licensing@alchemygroup.com</a></p>
+            <p>Телефон: <a href="tel:+71162824824">+7 925 556 35 50</a></p>
+        </div>
+        <div class="contact-image">
+            <img src="img/contact-page2.jpg" alt="Machine illustration">
+        </div>
+    </div>
+    <div class="contact-form">
+        <form>
+            <div>
+                <input type="text" name="name" autocomplete="off" placeholder="Имя*" required pattern="^[A-Za-zА-Яа-яЁё\s\-]{1,50}$">
+                <div class="field-description">Допустимы буквы, пробелы и дефисы, длина до 50 символов</div>
+            </div>
+            <div>
+                <input type="text" name="zipcode" autocomplete="off" placeholder="Почтовый индекс" pattern="^\d{3}-\d{3}$">
+                <div class="field-description">Формат: XXX-XXX</div>
+            </div>
+            <div>
+                <input type="email" name="email" autocomplete="off" placeholder="Email*" required pattern="^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                <div class="field-description">Формат: example@domain.com</div>
+            </div>
+            <div>
+                <input type="tel" name="telephone" autocomplete="off" placeholder="Телефон*" required pattern="^\+?\d{1,2}\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$|^\d{11}$">
+                <div class="field-description">Формат: +X (XXX) XXX-XX-XX или XXXXXXXXXXX</div>
+            </div>
+            <div style="grid-column: span 2;">
+                <textarea name="message" rows="5" placeholder="Сообщение*" minlength="10" required></textarea>
+                <div class="field-description">Минимум 10 символов</div>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</main>

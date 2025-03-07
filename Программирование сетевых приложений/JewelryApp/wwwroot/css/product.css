@@ -1,0 +1,128 @@
+.showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin-left: 200px;
+}
+
+.product-page {
+    margin: 45px;
+    font-family: "Manrope", sans-serif;
+    line-height: 26px;
+}
+
+.product-image-box {
+    justify-content: center;
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.product-main-image {
+    width: 70%;
+    min-width: 200px;
+    border-radius: 5%;
+}
+
+.product-title-box {
+    width: 100%;
+    height: 90%;
+}
+
+.product-title {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-price {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-submit-btn {   
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 10px;
+    color: white;
+    background-color: #640f0f;
+    border: 1px solid silver;
+}
+
+.product-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    column-gap: 20px;
+}
+
+.product-submit-input {
+    margin-top: 15px;
+    padding: 8px 10px;
+    width: 15%;
+}
+
+.product-submit-btn {
+    padding: 8px 80px;
+    font-size: 20px;
+    width: 35%;
+}
+
+.description-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px 0px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.description-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #640f0f;
+    border-bottom: 2px solid #640f0f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.description-header span {
+    padding: 0 10px;
+}
+
+.description-content p {
+    margin: 10px 0;
+}
+
+.description-content strong {
+    color: #333;
+}
+
+.description-content {
+    color: #555;
+}

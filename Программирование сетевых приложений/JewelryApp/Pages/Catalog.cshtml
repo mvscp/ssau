@@ -1,0 +1,132 @@
+@page
+@model JewelryApp.Pages.CatalogModel
+@{
+    ViewData["Title"] = "Каталог | Alchemy";
+}
+@using System.Web
+@using JewelryApp.Models
+@using X.PagedList.Mvc.Core
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+
+<head>
+    <link rel="stylesheet" href="~/css/catalog.css">
+    <script defer src="~/js/modal.js"></script>
+</head>
+
+<main class="catalog">
+    <form class="catalog-sidebar" method="get">
+        <input type="text" id="searchBox" placeholder="Поиск товаров..." class="search-input" value="@(Model.SearchQuery ?? "")"/>
+        <div class="sidebar-filter-category">
+            <p class="sidebar-title">Тип украшения</p>
+            <select class="sidebar-select" name="FilterCategory">
+                <option value="all" selected="@(Model.FilterCategory == "all")">Все</option>
+                @foreach (var category in Model.Categories)
+                {
+                    <option value="@category.Name" selected="@(Model.FilterCategory == category.Name)">@category.Name</option>
+                }
+            </select>
+        </div>
+        <div class="sidebar-filter-category">
+            <p class="sidebar-title">Цена</p>
+            <div class="sidebar-input">
+                <input class="sidebar-number-input" type="number" name="PriceFrom" placeholder="от" min="0" value="@(Model.PriceFrom?.ToString() ?? "")">
+                <p><span>-</span></p>
+                <input class="sidebar-number-input" type="number" name="PriceTo" placeholder="до" min="0" value="@(Model.PriceTo?.ToString() ?? "")">
+            </div>
+        </div>
+    </form>
+
+    <div id="productsContainer" class="catalog-products">
+        @foreach (var product in Model.Products)
+        {
+            <div class="product-card-box">
+                <a asp-page="/Product" asp-route-id="@product.Id">
+                    <img src="@Url.Content($"~/img/{product.ImageUrls[0]}")" alt="product" class="product-card-image"/>
+                    <div class="product-card-info">
+                        <p>@product.Name</p>
+                        <p>@product.Category.Name</p>
+                        <p><strong>@product.Price.ToString("N0")&#8381;</strong></p>
+                    </div>
+                </a>
+                <button onclick="openModal(@product.Id, '@product.Name', '@HttpUtility.JavaScriptStringEncode(product.Description)', @product.Price, '@Url.Content($"~/img/{product.ImageUrls[0]}")')">Предпросмотр</button>
+            </div>
+        }
+    </div>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Product Image" class="modal-image">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p><strong>Цена: <span id="modalPrice"></span> &#8381;</strong></p>
+        </div>
+    </div>
+
+    <div id="paginationContainer">
+        <div class="pagination">
+            @Html.PagedListPager(Model.Products, pageNumber => Url.Page("/Catalog", new
+            {
+                searchQuery = Model.SearchQuery,
+                filterCategory = Model.FilterCategory,
+                pageNumber,
+                priceFrom = Model.PriceFrom,
+                priceTo = Model.PriceTo
+            }), new PagedListRenderOptions
+            {
+                DisplayLinkToFirstPage = PagedListDisplayMode.IfNeeded,
+                DisplayLinkToLastPage = PagedListDisplayMode.IfNeeded,
+                DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+                DisplayLinkToNextPage = PagedListDisplayMode.Always,
+                DisplayItemSliceAndTotal = true,
+                ItemSliceAndTotalFormat = "Показано {0} - {1} из {2}",
+                LiElementClasses = new[] { "page-item" },
+                PageClasses = new[] { "page-link" }
+            })
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function updateProducts(url) {
+                let queryParams = {}
+                let newUrl
+
+                if (typeof(url) != "string") {
+                    url = window.location.pathname
+                    queryParams.searchQuery = $("#searchBox").val()
+                    queryParams.filterCategory = $("select[name='FilterCategory']").val()
+                    queryParams.pageNumber = "1"
+                    queryParams.priceFrom = $("input[name='PriceFrom']").val()
+                    queryParams.priceTo = $("input[name='PriceTo']").val()
+                    newUrl = url + "?" + $.param(queryParams);
+                } else {
+                    newUrl = url
+                }
+                
+                $.ajax({
+                    url: url,
+                    type: "GET",
+                    data: queryParams,
+                    success: function (data) {
+                        let newProducts = $(data).find("#productsContainer").html();
+                        let newPagination = $(data).find("#paginationContainer").html();
+                        $("#productsContainer").html(newProducts);
+                        $("#paginationContainer").html(newPagination);
+                        history.pushState(null, "", newUrl);
+                    }
+                });
+            }
+    
+            $("#searchBox").on("input", updateProducts);
+            $("select[name='FilterCategory'], input[name='PriceFrom'], input[name='PriceTo']").on("change input", updateProducts);
+    
+            $(document).on("click", "#paginationContainer a", function (e) {
+                e.preventDefault();
+                let url = $(this).attr("href");
+                updateProducts(url);
+            });
+        });
+    </script>
+</main>

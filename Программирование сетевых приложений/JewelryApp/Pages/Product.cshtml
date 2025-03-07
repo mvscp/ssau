@@ -1,0 +1,64 @@
+@page "{id}"
+@model JewelryApp.Pages.ProductModel
+
+@{
+    ViewData["Title"] = Model.Product?.Name ?? "Товар не найден";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/product.css">
+    <script src="~/js/carousel.js" type="module"></script>
+</head>
+
+<main class="product-page">
+    @if (Model.Product != null)
+    {
+        <div class="showcase">
+            <div class="carousel-container">
+                @foreach (var img in Model.Product.ImageUrls)
+                {
+                    <div class="product-image-box">
+                        <img src="@Url.Content($"~/img/{img}")" alt="product image" class="product-main-image"/>
+                    </div>
+                }
+                <div class="row">
+                    @for (var i = 0; i < Model.Product.ImageUrls.Count; i++)
+                    {
+                        <div class="column">
+                            <img class="demo cursor" src="@Url.Content($"~/img/{Model.Product.ImageUrls[i]}")" style="width:100%" data-slide="@(i+1)" onclick="currentSlide(this.getAttribute('data-slide'))" alt="@Model.Product.Name @i"/>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="product-title-box">
+                <h1 class="product-title">@Model.Product.Name</h1>
+                <div class="product-price">@Model.Product.Price &#8381;</div>
+                <div class="product-submit">
+                    <input class="product-submit-input" type="number" name="price-from" placeholder="Количество" min="1">
+                    <button class="product-submit-btn">В корзину</button>
+                </div>
+                <div class="description-container">
+                    <div class="description-header">
+                        <p><span>Description</span></p>
+                    </div>
+                    <div class="description-content">
+                        <p>@Model.Product.Description</p>
+
+                        <p><strong>Packaging:</strong><br>
+                            Packaged in an Alchemy branded bag, with barcode, including Alchemy guarantee and care instructions. Bulk packed in 5's in clear poly bag.
+                        </p>
+
+                        <p><strong>Materials & Origin:</strong><br>
+                            Designed and hand made in England incorporating highest quality, crystal* and fine English pewter.<br>
+                            *Crystal colours are subject to availability, and may vary from the image shown.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Товар не найден</p>
+    }
+</main>

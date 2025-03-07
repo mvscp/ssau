@@ -1,0 +1,76 @@
+@page
+@model JewelryApp.Pages.CartModel
+@{
+    ViewData["Title"] = "Каталог | Alchemy";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/cart.css">
+    <script src="~/js/cart.js" type="module"></script>
+</head>
+
+<div class="modal hidden">
+    <form class="modal-window">
+        <button type="button" class="modal-btn-close">X</button>
+        <h1 class="modal-header">Оформление товара</h1>
+        <p class="modal-hint">Заполните простую форму и наши менеджеры свяжутся с вами, ответят на любые вопросы и подготовят счет на оплату</p>
+
+        <input type="text" name="name" autocomplete="off" placeholder="Ваше имя" required  pattern="^[A-Za-zА-Яа-яЁё\s\-]{1,50}$" title="Разрешены буквы (латиница, кириллица), пробелы и дефисы. Длина до 50 символов." >
+        <input type="text" name="phone" autocomplete="off" placeholder="Телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Введите телефон в формате +7 (123) 456-78-90 или 89123456789">
+        <input type="email" name="email" autocomplete="off" placeholder="E-mail" required pattern="^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Введите корректный email, например example@mail.com">
+        <label for="salon">Выберите салон:</label>
+        <select name="salon" id="">
+            <option value="">Самара, ул. Авроры, 154</option>
+            <option value="">Новосибирск, ул. Станционная, 62/1</option>
+            <option value="">Красноярск, ул. Караульная, 31</option>
+            <option value="">Казань, ул. Поперечно-Базарная, 32</option>
+        </select>
+        <textarea rows="2" placeholder="Комментарий" maxlength="131"></textarea>
+
+        <button class="modal-btn-submit" type="submit">Отправить</button>
+    </form>
+    <div class="overlay"></div>
+</div>
+
+<main class="cart">
+    <h1 style="grid-area: title;">Корзина</h1>
+    <table class="cart-items">
+        @foreach (var product in Model.Products)
+        {
+            <tr class="cart-item">
+                <td><img class="cart-item-img" src="img/@product.ImageUrls[0]" alt="Motorcycle"/></td>
+                <td>@product.Name</td>
+                <td><span class="cart-item-unit-price">@product.Price</span> &#8381;/шт</td>
+                <td>
+                    <input class="cart-item-count" type="number" value="1" min="1">
+                </td>
+
+                <td>
+                    <b>
+                        <span class="cart-item-price-total">@product.Price</span> &#8381;
+                    </b>
+                </td>
+                <td><button class="cart-item-btn-delete">X</button></td>
+            </tr>
+        }
+    </table>
+
+    <div class="cart-submit-container">
+        <div class="cart-submit-row">
+            <span>Товары:</span>
+            <b class="items-total-count">?</b>
+        </div>
+
+        <div class="cart-submit-row">
+            <span>Итого:</span>
+            <b><span class="total-price">?</span> &#8381;</b>
+        </div>
+
+        <div class="cart-submit-row">
+            <span>Промокод:</span>
+            <input type="text" style="font-size: 24px;">
+        </div>
+
+        <button class="cart-submit-btn">Оформить заказ</button>
+    </div>
+</main>

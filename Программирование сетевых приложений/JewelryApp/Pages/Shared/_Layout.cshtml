@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <img src="~/icons/alchemy_skull_gold.png" alt="Logo" class="our-logo" />
+        <ul>
+            <li class="nav-item"><a asp-page="/Index">Главная</a></li>
+            <li class="nav-item"><a asp-page="/Catalog">Каталог</a></li>
+            <li class="nav-item"><a asp-page="/Collections">Коллекции</a></li>
+            <li class="nav-item"><a asp-page="/Contacts">Контакты</a></li>
+            <li class="nav-item"><a asp-page="/Cart">Корзина</a></li>
+        </ul>
+    </nav>
+</header>
+
+@RenderBody()
+
+<footer>
+    <table>
+        <tr>
+            <th>Категории</th>
+            <th>Информация</th>
+            <th>Поддержка пользователей</th>
+        </tr>
+        <tr>
+            <td><a asp-page="/Catalog">Украшения</a></td>
+            <td><a href="">Политика конфиденциальности</a></td>
+            <td><a href="">Войти в аккаунт</a></td>
+        </tr>
+        <tr>
+            <td><a asp-page="/Catalog">Одежда</a></td>
+            <td><a asp-page="/Contacts">Контакты</a></td>
+            <td><a href="">Доставка</a></td>
+        </tr>
+        <tr>
+            <td><a asp-page="/Catalog">Все товары</a></td>
+            <td><a href="">Доставка</a></td>
+            <td><a href="">Размерная сетка</a></td>
+        </tr>
+    </table>
+    <div class="social-media-links">
+        <img src="~/icons/alchemy-logo-white-1.png" alt="brand icon" style="width: 70%;">
+        <div>
+            <a href=""><img src="~/icons/icons8-вконтакте.svg" alt="vk"></a>
+            <a href=""><img width="52" src="~/icons/icons8-inst.svg" alt="instagram"></a>
+        </div>
+    </div>
+</footer>
+
+@* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+@* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+@* <script src="~/js/site.js" asp-append-version="true"></script> *@
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

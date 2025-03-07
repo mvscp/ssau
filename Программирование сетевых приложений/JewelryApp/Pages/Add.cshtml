@@ -1,0 +1,56 @@
+@page
+@model JewelryApp.Pages.AddModel
+@{
+    ViewData["Title"] = "Добавить товар | Alchemy";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/add.css">
+    <script src="~/js/utils.js" type="module"></script>
+</head>
+
+<main>
+    <h1>Добавление товара</h1>
+    <div class="add-form">
+        <form method="post" enctype="multipart/form-data" asp-page="/Add">
+            <div>
+                <input type="text" name="name" placeholder="Имя пользователя*" required pattern="^[A-Za-z_]{1,50}$">
+                <div class="field-description">Допустимы только латинские буквы и нижние подчеркивания, длина до 50 символов</div>
+            </div>
+            <div>
+                <input type="tel" name="telephone" placeholder="Телефон*" required pattern="^\+?\d{1,2}\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$|^\d{11}$">
+                <div class="field-description">Формат: +X (XXX) XXX-XX-XX или XXXXXXXXXXX.</div>
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Email*" required pattern="^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                <div class="field-description">Формат: example@domain.com.</div>
+            </div>
+            <div>
+                <input type="text" name="productName" placeholder="Название товара*" required>
+                <div class="field-description">Введите название товара.</div>
+            </div>
+            <div>
+                <select class="sidebar-select" name="category">
+                    @foreach (var category in Model.Categories)
+                    {
+                        <option value="@category.Name">@category.Name</option>
+                    }
+                </select>
+                <div class="field-description">Укажите категорию товара.</div>
+            </div>
+            <div>
+                <input type="number" name="price" placeholder="Цена*" required step="1" min="0">
+                <div class="field-description">Введите цену товара (в рублях).</div>
+            </div>
+            <div class="full-width">
+                <textarea name="description" rows="5" placeholder="Описание товара" required></textarea>
+                <div class="field-description">Добавьте описание</div>
+            </div>
+            <div class="full-width">
+                <input type="file" name="images" accept="image/*" multiple required>
+                <div class="field-description">Загрузите изображения товара.</div>
+            </div>
+            <button type="submit">Добавить товар</button>
+        </form>
+    </div>
+</main>

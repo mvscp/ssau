@@ -1,0 +1,195 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-image: url("/img/footer-bg-2.jpg");
+    display: flex;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 80px;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-item :hover {
+    color: #640f0f;
+}
+
+a {
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 36px;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 25px;
+    line-height: 1;
+
+    text-align: center;
+    color:#640f0f;
+}
+
+h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+
+    text-align: center;
+    color:#640f0f;
+}
+
+footer {
+    background-image: url("/img/footer-bg-2.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+
+footer table {
+    border-spacing: 40px 10px;
+    color: grey;
+}
+
+footer a {
+    color: grey;
+}
+
+button {
+    cursor: pointer;
+}
+
+th {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    text-align: left;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.brand {
+    border-bottom: 1px solid black;
+}
+
+.brand-title {
+    display: flex;
+    justify-content: center;
+}
+
+.brand-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 30px;
+    margin: 30px 90px;
+    margin-bottom: 70px;
+}
+
+.brand-container img {
+    margin: auto;
+}
+
+.brand-content {
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+    font-style: 14px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.our-logo {
+    width: 6%;
+}
+
+.brand-logo {
+    width: 30%;
+}
+
+.brand-logo-alchemy {
+    width: 60%;
+}
+
+.photo-zone img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.model-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.model-line-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.model-img {
+    width: 450px;
+}
+
+.all-models-btn {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+
+    
+
+    letter-spacing: 0.7;
+    background-color: #640f0f;
+
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #640f0f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
